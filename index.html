@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <title>ویراشگر کد آنلاین | آموزش داغ</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.6/ace.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#5233ff">
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="icon" href="../img/logo.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload='ready()'>
+        <iframe id='iframe'></iframe>
+        <div id='container'>
+            <div class="box">
+                <h2><ion-icon name="logo-html5"></ion-icon> HTML</h2>
+                <div class='editor' id='htmlEditor'></div>
+            </div>
+            <div class="box">
+            <h2><ion-icon name="logo-css3"></ion-icon> CSS</h2>
+            <div class='editor' id='cssEditor'></div>
+            </div>
+            <div class="box">
+            <h2><ion-icon name="logo-javascript"> </ion-icon>Javascript</h2>
+            <div class='editor' id='jsEditor'></div>
+            </div>
+        </div>
+        <!-- Javascript -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script>
+            $(function() {
+            $( "#htmlEditor").resizable();
+            });
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: en;
+    src: url(../font/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: fa;
+    src: url(../font/Yekan-Bakh-FaNum-04-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s ease;
+    outline: none;
+}
+body{
+    background: #eee;
+    font-family: en,fa;
+}
+/* اسکرول بار */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #5233ff;
+    border-radius: 20px;
+}
+#container {
+    width: 100%;
+    display: flex;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#iframe {
+    background:#eee;
+    height:300px;
+    width:95%;
+    padding: 10px;
+    margin: 1rem auto;
+    display: block;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: none;
+    border-radius:10px;
+}
+.editor {
+    height:400px;
+    width:100%;
+    background:#222;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    overflow: auto;
+}
+#cssEditor{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+h2{
+    background: #222;
+    color:#ff4500;
+    padding: 1rem;
+}
+h2 ion-icon{
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width:900px) {
+    #container {
+        flex-direction: column;
+    }
+}
